@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(26,28,40);
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+header{
+    position: relative;
+    top: -250px;
+    padding: 20px;
+}
+a {
+    
+    text-decoration: none;
+    font-size: 1.5em;
+    color: rgb(167, 103, 34);
+    font-family: "Lexend Deca", sans-serif;}
+a:hover{
+    letter-spacing: 0.4px;
+}
+
+main{
+    position: relative;
+    left: -100px;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas:
+    'a a a b b'
+    'c c d d d'
+    'c c e e e' 
+    ;
+    gap: 10px;
+    border-radius: 2px;
+    width: 600px;
+    margin: auto;
+    
+}
+main div{
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 0 4px #000;
+}
+.a{
+   background-color: hsl(14,84%,52%);
+   grid-area: a;
+   color: transparent;
+}
+.a:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.585);
+}
+.b{
+    background-color: hsl(39,100%,50%);
+    grid-area: b;
+    color: transparent;
+}
+.b:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.585);
+}
+.c{
+    background-color: rgb(5,170,66);
+    grid-area: c;
+    color: transparent;
+}
+.c:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.585);
+}
+.d{
+    background-color: rgb(1,174,253);
+    grid-area: d;
+    color: transparent;
+}
+.d:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.585);
+}
+.e{
+    background-color: rgb(1,174,253);
+    grid-area: e;
+    color: transparent;
+}
+.e:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.585);
+}
+@media screen and (max-width:375px) and (min-height: 667px){
+    body{
+        background-color: rgb(26,28,40);
+        display: flex;
+        place-items: center;
+        min-height: 100vh;
+    }
+        main{
+            position: relative;
+            left: -10px;
+            display: grid;
+            grid-template-rows: 100px 1fr;
+            grid-template-areas:
+            'a'
+            'b'
+            'c'
+            'd'
+            'e'
+            ;
+            gap: 10px;
+            border-radius: 2px;
+            width: 50%;
+            margin-left: -30px;}
+        
+        header{
+            position: relative;
+            top: -300px;
+            left:100px;
+        }
+}

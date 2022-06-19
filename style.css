@@ -32,6 +32,7 @@ main {
     top: 20%;*/
   margin: auto;
   display: flex;
+  flex-direction: row;
   align-items: center;
   height: 100vh;
 }
@@ -121,7 +122,8 @@ main .third-container {
     background-color:hsl(0, 0%, 95%);
   }
   main{
-      display:inline-block;
+      display:flex;
+      flex-direction: column;
       width: 200px;
       margin: 0 95px;  
       padding:2px; 
